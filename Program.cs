@@ -17,6 +17,8 @@ namespace calculadora
             System.Console.WriteLine("2. Restar");
             System.Console.WriteLine("3. Multiplicar");
             System.Console.WriteLine("4. Dividir");
+            System.Console.WriteLine("5. Salir");
+
             bool fin = false;
             int opcion = 0;
             while(!fin)
@@ -33,6 +35,7 @@ namespace calculadora
                         int sum2 = Convert.ToInt32(Console.ReadLine());
                         System.Console.WriteLine("El resultado de la suma es: " + (sum1 + sum2));
                         break;
+
                     case 2:
                         System.Console.WriteLine("Has elegido restar");
                         System.Console.WriteLine("Inserta el número a restar:");
@@ -41,6 +44,7 @@ namespace calculadora
                         int rest2 = Convert.ToInt32(Console.ReadLine());
                         System.Console.WriteLine("El resultado de la resta es: " + (rest1 - rest2));
                         break;
+
                     case 3:
                         System.Console.WriteLine("Has elegido multiplicar");
                         System.Console.WriteLine("Inserta el primer número a multiplicar:");
@@ -49,6 +53,7 @@ namespace calculadora
                         int mult2 = Convert.ToInt32(Console.ReadLine());
                         System.Console.WriteLine("El resultado de la multiplicación es: " + (mult1 * mult2));
                         break;
+
                     case 4:
                         System.Console.WriteLine("Has elegido dividir");
                         System.Console.WriteLine("Inserta el número a dividir:");
@@ -57,6 +62,7 @@ namespace calculadora
                         int div2 = Convert.ToInt32(Console.ReadLine());
                         System.Console.WriteLine("El resultado de la multiplicación es: " + (div1 / div2));
                         break;
+                        
                     case 5:
                         fin = true;
                         break;
